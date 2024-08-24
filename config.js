@@ -16,7 +16,8 @@ global.owner = [
 ["595982216131"],
 ["595994836199"],
 ["5213339577315"],
-["595994825505"]]
+["595994825505"],
+["542613079682"]]
 
 global.mods = []
 global.prems = []
@@ -184,7 +185,7 @@ message: {
 }}}
 
 
-global.multiplier = 45 // Cuanto más alto, más difícil subir de nivel 
+global.multiplier = 25 // Cuanto más alto, más difícil subir de nivel 
 
 //Emojis RPG - Referencias
 global.rpg = {
