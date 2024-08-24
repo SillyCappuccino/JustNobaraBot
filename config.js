@@ -97,10 +97,11 @@ global.moment = moment
 global.official = [ // Agregate si eres Owner
 ["595976126756", 'AdrianOficial 💻', 1], 
 ["595982216131", '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],  
-["595994825505", '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿𝗮 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1]]
+["595994825505", '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿𝗮 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],
+["542613079682", 'Silly Person', 1]]
 
 global.mail = '' // Add email
-global.desc = '' // Add short description (20 caractres max)
+global.desc = 'Buenas Skibidis' // Add short description (20 caractres max)
 global.desc2 = '' // Add long description (90 caractres max) (Este parámetro se aplicará sólo si su whasapp no tiene descripción)
 global.country = '' // Add country, example: 🇪🇨
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
@@ -113,25 +114,25 @@ global.gt = "𝐓𝐡𝐞-𝐌𝐢𝐤𝐮𝐁𝐨𝐭-𝐌𝐃𝐕5"
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
-global.rg = '╰⊱✅⊱ *𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊* ⊱✅⊱╮\n\n'
+global.rg = '╰⊱✅⊱ *SuperSkibidiResultadoPapu* ⊱✅⊱╮\n\n'
 global.resultado = rg
 
-global.ag = '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n'
+global.ag = '╰⊱⚠️⊱ *Advertencia (Nigger)* ⊱⚠️⊱╮\n\n'
 global.advertencia = ag
 
-global.iig = '╰⊱❕⊱ *𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊́𝙉* ⊱⊱╮\n\n'
+global.iig = '╰⊱❕⊱ *Informacion :O* ⊱⊱╮\n\n'
 global.informacion = iig
 
-global.fg = '╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊* ⊱❌⊱╮\n\n'
+global.fg = '╰⊱❌⊱ *Fallo D:* ⊱❌⊱╮\n\n'
 global.fallo = fg
 
-global.mg = '╰⊱❗️⊱ *𝙇𝙊 𝙐𝙎𝙊́ 𝙈𝘼𝙇* ⊱❗️⊱╮\n\n'
+global.mg = '╰⊱❗️⊱ *Se uso mal >:C* ⊱❗️⊱╮\n\n'
 global.mal = mg
 
-global.eeg = '╰⊱📩⊱ *𝙍𝙀𝙋𝙊𝙍𝙏𝙀* ⊱📩⊱╮\n\n'
+global.eeg = '╰⊱📩⊱ *Reporte D:* ⊱📩⊱╮\n\n'
 global.envio = eeg
 
-global.eg = '╰⊱💚⊱ *𝙀́𝙓𝙄𝙏𝙊* ⊱💚⊱╮\n\n'
+global.eg = '╰⊱💚⊱ *Exito :D* ⊱💚⊱╮\n\n'
 global.exito = eg
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
@@ -183,7 +184,7 @@ message: {
 }}}
 
 
-global.multiplier = 85 // Cuanto más alto, más difícil subir de nivel 
+global.multiplier = 45 // Cuanto más alto, más difícil subir de nivel 
 
 //Emojis RPG - Referencias
 global.rpg = {
