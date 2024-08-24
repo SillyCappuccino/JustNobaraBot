@@ -1,9 +1,9 @@
 {
-  "name": "The-MikuBot-MDV5", 
-  "description": "Super Bot WhatsApp",
+  "name": "JustNobaraBot", 
+  "description": "Super Skbidi Bot",
   "repository": "https://github.com/The-DiosBot-MD/The-MikuBot-MDV5",
-  "logo": "https://i.imgur.com/8fK4h6F.jpg",
-  "keywords": ["java", "bot", "whatsapp-bot", "whatsapp-automation"],
+  "logo": "https://imgur.com/a/vUqTmr1",
+  "keywords": ["java", "bot", "whatsapp-bot", "whatsapp-automation", "Nobara", "nobara"],
   "buildpacks": [
     {
       "url": "heroku/nodejs"
