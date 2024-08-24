@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: mikubot-mdv5
+    name: justnobarabot
     env: docker
     region: Frankfurt
     plan: premium
