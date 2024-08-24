@@ -1,7 +1,7 @@
 {
   "name": "JustNobaraBot", 
   "description": "Super Skbidi Bot",
-  "repository": "https://github.com/The-DiosBot-MD/The-MikuBot-MDV5",
+  "repository": "https://github.com/SillyCappuccino/JustNobaraBot",
   "logo": "https://imgur.com/a/vUqTmr1",
   "keywords": ["java", "bot", "whatsapp-bot", "whatsapp-automation", "Nobara", "nobara"],
   "buildpacks": [
