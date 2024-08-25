@@ -107,11 +107,11 @@ global.desc2 = '' // Add long description (90 caractres max) (Este parámetro se
 global.country = '' // Add country, example: 🇪🇨
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
-global.packname = `𝐓𝐡𝐞-𝐌𝐢𝐤𝐮𝐁𝐨𝐭-𝐌𝐃𝐕5`
-global.author = `𝐀𝐝𝐫𝐢𝐚𝐧𝐎𝐟𝐢𝐜𝐢𝐚𝐥`
-global.vs = "5.0.0"
+global.packname = `JustNobaraBot`
+global.author = `Original Author: 𝐀𝐝𝐫𝐢𝐚𝐧𝐎𝐟𝐢𝐜𝐢𝐚𝐥`
+global.vs = "1.0.0"
 global.vsJB = "4.0 (Beta)"
-global.gt = "𝐓𝐡𝐞-𝐌𝐢𝐤𝐮𝐁𝐨𝐭-𝐌𝐃𝐕5"
+global.gt = "JustNobaraSkibidiBot"
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
@@ -137,8 +137,8 @@ global.eg = '╰⊱💚⊱ *Exito :D* ⊱💚⊱╮\n\n'
 global.exito = eg
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
-global.wm = "𝑻𝒉𝒆-𝑴𝒊𝒌𝒖𝑩𝒐𝒕-𝑴𝑫𝑽5 𝑩𝒚 𝑨𝒅𝒓𝒊𝒂𝒏𝑶𝒇𝒊𝒄𝒊𝒂𝒍"
-global.igfg = "𝑇ℎ𝑒-𝑀𝑖𝑘𝑢𝐵𝑜𝑡-𝑀𝐷𝑉5"
+global.wm = "JustNobaraBot Edited b𝒚 Sill𝒚Cappuccino"
+global.igfg = "JustNobaraBot"
 global.nomorown = "595994836199"
 global.pdoc = ["application/vnd.openxmlformats-officedocument.presentationml.presentation", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "application/vnd.ms-excel", "application/msword", "application/pdf", "text/rtf"]
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
@@ -185,7 +185,7 @@ message: {
 }}}
 
 
-global.multiplier = 25 // Cuanto más alto, más difícil subir de nivel 
+global.multiplier = 45 // Cuanto más alto, más difícil subir de nivel 
 
 //Emojis RPG - Referencias
 global.rpg = {
