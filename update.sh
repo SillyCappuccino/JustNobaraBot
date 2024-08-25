@@ -1,8 +1,8 @@
 # Código desarrollado por @gata_dios 
 #Codigo editado por AdrianOficial 
 #!/data/data/com.termux/files/usr/bin/bash 
-BOT_DIR="The-MikuBot-MDV5"  
-BOT_REPO="https://github.com/The-DiosBot-MD/$BOT_DIR"
+BOT_DIR="NobaraSkibidiBot"  
+BOT_REPO="https://github.com/SillyCappuccino/JustNobaraBot/$BOT_DIR"
 DB_FILE="database.json"
  
 GREEN='\033[32m'
