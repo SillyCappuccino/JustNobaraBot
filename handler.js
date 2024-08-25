@@ -60,7 +60,7 @@ if (typeof user !== 'object')
 global.db.data.users[m.sender] = {}
 if (user) {
 if (!isNumber(user.exp)) user.exp = 0
-if (!('premium' in user)) user.premium = false
+if (!('premium' in user)) user.premium = true
 if (!('muto' in user)) user.muto = false
 if (!isNumber(user.joincount)) user.joincount = 1
 if (!isNumber(user.money)) user.money = 150
@@ -513,8 +513,8 @@ if (!isNumber(user.wood)) user.wood = 0
 if (!isNumber(user.wortel)) user.wortel = 0
 if (!user.lbars) user.lbars = '[▒▒▒▒▒▒▒▒▒]'
 if (!user.job) user.job = 'Desempleo'
-if (!user.premium) user.premium = false
-if (!user.premium) user.premiumTime = 0
+if (!user.premium) user.premium = true
+if (!user.premium) user.premiumTime = 99999999999999999999999
 if (!user.rtrofi) user.rtrofi = 'Bronce'
 } else
 global.db.data.users[m.sender] = {
