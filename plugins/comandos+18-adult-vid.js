@@ -49,7 +49,7 @@ console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗
 console.log(e)}
 }
 handler.command = ['pornovid', 'nsfwvid', 'pornovid2', 'nsfwvid2', 'pornovidlesbi', 'nsfwvidlesbi', 'pornovidgay', 'nsfwvidgay', 'pornovidbisexual', 'nsfwvidbisexual', 'pornovidrandom', 'nsfwvidrandom']
-handler.premium = true
+handler.premium = false
 handler.register = true
 export default handler
 
