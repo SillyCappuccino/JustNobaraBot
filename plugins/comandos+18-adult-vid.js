@@ -14,7 +14,7 @@ try{
 switch (command) {  
 case "pornovid": case "nsfwvid":    
 //await conn.sendFile(m.chat, enlace, null, `${lenguajeGB['smsCont18Porn']()}\n${lenguajeGB['smsBotonM7']()} » ${user.premiumTime > 0 ? '✅' : '❌'}`, null, null, {viewOnce: true}, frep, m)
-await conn.sendFile(m.chat, enlace, null, `${lenguajeGB['smsCont18Porn']()}\n${lenguajeGB['smsBotonM7']()} ` , m, null, {viewOnce: false})
+await conn.sendFile(m.chat, enlace, null, `${lenguajeGB['smsCont18Porn']()}\n${lenguajeGB['smsBotonM7']()} » ${user.premiumTime < 0 ? '✅' : '❌'} ` , m, null, {viewOnce: false})
 //await conn.sendButton(m.chat, lenguajeGB.smsCont18PornP(), `*_${lenguajeGB['smsBotonM7']()}_* » ${user.premiumTime > 0 ? '✅' : '❌'}\n` + wm + ` : *${command[0].toUpperCase() + command.substring(1)}*`, enlace, [[lenguajeGB.smsSigPrem(), `${usedPrefix + command}`], [`🥵 ${lenguajeGB.lenguaje() == 'es' ? 'porno vid 2' : 'nsfw vid 2'} 🥵`.toUpperCase(), `${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'pornovid2' : 'nsfwvid2'}`]], m, frep) 
 break  
     
@@ -49,7 +49,7 @@ console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗
 console.log(e)}
 }
 handler.command = ['pornovid', 'nsfwvid', 'pornovid2', 'nsfwvid2', 'pornovidlesbi', 'nsfwvidlesbi', 'pornovidgay', 'nsfwvidgay', 'pornovidbisexual', 'nsfwvidbisexual', 'pornovidrandom', 'nsfwvidrandom']
-handler.premium = false
+//handler.premium = false
 handler.register = true
 export default handler
 
