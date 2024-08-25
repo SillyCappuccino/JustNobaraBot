@@ -1,7 +1,7 @@
 {
 "name": "JustNobaraBot",
-"version": "5.0.0", 
-"description": "Super Bot WhatsApp",
+"version": "1.0.0", 
+"description": "Super Skibidi Bot",
 "main": "index.js",
 "type": "module",
     
@@ -19,7 +19,7 @@
     
 "homepage": "https://github.com/SillyCappuccino/JustNobaraBot",
 "author": {
-"name": "The-DiosBot-MD" },
+"name": "JustNobaraSkibidiBot" },
     
 "repository": {
 "type": "git",
