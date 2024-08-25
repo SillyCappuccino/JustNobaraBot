@@ -3,7 +3,7 @@
   "description": "Super Skbidi Bot",
   "repository": "https://github.com/SillyCappuccino/JustNobaraBot",
   "logo": "https://imgur.com/a/vUqTmr1",
-  "keywords": ["java", "bot", "whatsapp-bot", "whatsapp-automation", "Nobara", "nobara"],
+  "keywords": ["java", "bot", "whatsapp-bot", "whatsapp-automation", "Nobara", "nobara", "Skibidi"],
   "buildpacks": [
     {
       "url": "heroku/nodejs"
