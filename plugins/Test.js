@@ -1,5 +1,6 @@
 import fetch from 'node-fetch'
 let MessageType = (await import(global.baileys)).default
+let media, msg, type
 let handler = async (m, { conn}) => {
 try {   
 if(m.quoted?.sender) m.mentionedJid.push(m.quoted.sender)
