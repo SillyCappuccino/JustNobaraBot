@@ -8,7 +8,7 @@ let handler = async (m, {usedPrefix, command, conn}) => {
 let user = global.db.data.users[m.sender]
 
 try {
-    if (command == "test" || command "test2") {
+    if (command == 'test' || command 'test2') {
 let res = (await axios.get(`https://github.com/SillyCappuccino/JustNobaraBot/blob/master/src/JSON/Slaps.js`)).data  
 let enlace = await res[Math.floor(res.length * Math.random())]
   await conn.sendFile(m.chat, enlace, null, `, `+${m.sender.split('@')[0]} le dio una bofetada a ${m.mentionedJid.map((user)=>(user === m.sender)? 'alguien ': `+${user.split('@')[0]}`).join(', ')}``, null, null, {viewOnce: false}, m)}
