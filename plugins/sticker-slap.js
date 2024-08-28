@@ -10,7 +10,7 @@ try {
 //let { url } = json
 let list = global.pokemon
 let link = list[Math.floor(Math.random() * list.length)]
-let stiker = await conn.sendFile(m.chat, link, null, `+${m.sender.split('@')[0]} le dio una bofetada a ${m.mentionedJid.map((user)=>(user === m.sender)? 'alguien ': `+${user.split('@')[0]}`).join(', ')}`)
+await conn.sendFile(m.chat, link, null, null, null, {viewOnce: false}, `+${m.sender.split('@')[0]} le dio una bofetada a ${m.mentionedJid.map((user)=>(user === m.sender)? 'alguien ': `+${user.split('@')[0]}`).join(', ')}`)
 //let stiker = await sticker(null,s[Math.floor(Math.random() * s.length)], `+${m.sender.split('@')[0]} le dio una bofetada a ${m.mentionedJid.map((user)=>(user === m.sender)? 'alguien ': `+${user.split('@')[0]}`).join(', ')}`)
 conn.sendFile(m.chat, stiker, null, { asSticker: false })
 } catch (e) { }}
