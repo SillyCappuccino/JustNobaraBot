@@ -4,7 +4,7 @@ import fetch from 'node-fetch'
 
 let MessageType = (await import(global.baileys)).default
 let handler = async (m, {usedPrefix, command, conn}) => {
-//let frep = { contextInfo: { externalAdReply: {title: wm, body: lenguajeGB.smsCont18Porn2(), sourceUrl: redesMenu.getRandom(), thumbnail: await(await fetch(img16)).buffer() }}}
+let frep = { contextInfo: { externalAdReply: {title: wm, body: lenguajeGB.smsCont18Porn2(), sourceUrl: redesMenu.getRandom(), thumbnail: await(await fetch(img16)).buffer() }}}
 let user = global.db.data.users[m.sender]
 
 try {
@@ -19,7 +19,7 @@ await conn.sendFile(m.chat, enlace, null, `+${m.sender.split('@')[0]} le dio una
 } catch (e) { }}
 handler.help = ['slapss']
 handler.tags = ['General']
-handler.command = /^test|test2|test3|abofetear|golpear/i
+handler.command = /^slap|test2|test3|abofetear|golpear/i
 handler.register = true
 export default  handler
 
