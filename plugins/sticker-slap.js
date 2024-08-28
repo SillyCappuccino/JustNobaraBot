@@ -1,15 +1,16 @@
-import axios from "axios"
+//import axios from "axios"
 import { sticker } from '../lib/sticker.js'
 import fetch from 'node-fetch'
 
 let MessageType = (await import(global.baileys)).default
-let frep = { contextInfo: { externalAdReply: {title: wm, body: lenguajeGB.smsCont18Porn2(), sourceUrl: redesMenu.getRandom(), thumbnail: await(await fetch(img16)).buffer() }}}
+//let frep = { contextInfo: { externalAdReply: {title: wm, body: lenguajeGB.smsCont18Porn2(), sourceUrl: redesMenu.getRandom(), thumbnail: await(await fetch(img16)).buffer() }}}
 let user = global.db.data.users[m.sender]
 let handler = async (m, { conn}) => {
 
-try {
-//let res = (await axios.get(`https://github.com/SillyCappuccino/JustNobaraBot/blob/master/src/JSON/Slaps.js`)).data  
-//let enlace = await res[Math.floor(res.length * Math.random())]
+try{
+  
+let res = (await axios.get(`https://github.com/SillyCappuccino/JustNobaraBot/blob/master/src/JSON/Slaps.js`)).data  
+let enlace = await res[Math.floor(res.length * Math.random())]
 let img = await conn.sendFile(m.chat, enlace, null,s[Math.floor(Math.random() * s.length)],`+${m.sender.split('@')[0]} le dio una bofetada a ${m.mentionedJid.map((user)=>(user === m.sender)? 'alguien ': `+${user.split('@')[0]}`).join(', ')}`, null, null, {viewOnce: false}, m)}
 //if(m.quoted?.sender) m.mentionedJid.push(m.quoted.sender)
 //if(!m.mentionedJid.length) m.mentionedJid.push(m.sender)
