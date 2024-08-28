@@ -9,7 +9,7 @@ try {
 //let json = await res.json()
 //let { url } = json
 let stiker = await sticker(null,s[Math.floor(Math.random() * s.length)], `+${m.sender.split('@')[0]} le dio una bofetada a ${m.mentionedJid.map((user)=>(user === m.sender)? 'alguien ': `+${user.split('@')[0]}`).join(', ')}`)
-conn.sendFile(m.chat, stiker, null, { asSticker: true })
+conn.sendFile(m.chat, stiker, null, { asSticker: false })
 } catch (e) { }}
 handler.help = ['slap']
 handler.tags = ['General']
