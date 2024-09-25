@@ -60,7 +60,7 @@ if (typeof user !== 'object')
 global.db.data.users[m.sender] = {}
 if (user) {
 if (!isNumber(user.exp)) user.exp = 0
-if (!('premium' in user)) user.premium = true
+//if (!('premium' in user)) user.premium = true
 if (!('muto' in user)) user.muto = false
 if (!isNumber(user.joincount)) user.joincount = 1
 if (!isNumber(user.money)) user.money = 150
@@ -94,7 +94,7 @@ if (!isNumber(user.kayu)) user.kayu = 0
 if (!isNumber(user.makanan)) user.makanan = 0
 if (!isNumber(user.mangga)) user.mangga = 0
 if (!isNumber(user.pisang)) user.pisang = 0
-if (!isNumber(user.premiumDate)) user.premiumDate = -1
+//if (!isNumber(user.premiumDate)) user.premiumDate = -1
 if (!isNumber(user.regTime)) user.regTime = -1
 if (!isNumber(user.semangka)) user.semangka = 0
 if (!isNumber(user.stroberi)) user.stroberi = 0
@@ -513,8 +513,8 @@ if (!isNumber(user.wood)) user.wood = 0
 if (!isNumber(user.wortel)) user.wortel = 0
 if (!user.lbars) user.lbars = '[▒▒▒▒▒▒▒▒▒]'
 if (!user.job) user.job = 'Desempleo'
-if (!user.premium) user.premium = true
-if (!user.premium) user.premiumTime = 99999999999999999999999
+//if (!user.premium) user.premium = true
+//if (!user.premium) user.premiumTime = 99999999999999999999999
 if (!user.rtrofi) user.rtrofi = 'Bronce'
 } else
 global.db.data.users[m.sender] = {
@@ -847,8 +847,8 @@ pisang: 0,
 pointxp: 0,
 potion: 10,
 muto: false,
-premium: true,
-premiumTime: 999999999999999999999999999999999,
+//premium: true,
+//premiumTime: 999999999999999999999999999999999,
 ramuan: 0,
 ramuancentaurlast: 0,
 ramuangriffinlast: 0,
@@ -1079,7 +1079,7 @@ const isROwner = [conn.decodeJid(global.conn.user.id), ...global.owner.map(([num
 const isOwner = isROwner || m.fromMe
 const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 //const isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
-const isPrems = isROwner || global.db.data.users[m.sender].premiumTime > 0
+//const isPrems = isROwner || global.db.data.users[m.sender].premiumTime > 0
 if (opts['queque'] && m.text && !(isMods || isPrems)) {
 let queque = this.msgqueque, time = 1000 * 5
 const previousID = queque[queque.length - 1]
@@ -1237,10 +1237,10 @@ if (plugin.mods && !isMods) { // Moderator
 fail('mods', m, this)
 continue
 }
-if (plugin.premium && !isPrems) { // Premium
-fail('premium', m, this)
-continue
-}
+//if (plugin.premium && !isPrems) { // Premium
+//fail('premium', m, this)
+//continue
+//}
 if (plugin.group && !m.isGroup) { //Solo el grupo
 fail('group', m, this)
 continue
@@ -1533,7 +1533,7 @@ let msg = {
 rowner: lenguajeGB['smsRowner'](),
 owner: lenguajeGB['smsOwner'](),
 mods: lenguajeGB['smsMods'](),
-premium: lenguajeGB['smsPremium'](),
+//premium: lenguajeGB['smsPremium'](),
 group: lenguajeGB['smsGroup'](),
 private: lenguajeGB['smsPrivate'](),
 admin: lenguajeGB['smsAdmin'](),
