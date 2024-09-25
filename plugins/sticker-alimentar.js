@@ -1,12 +1,8 @@
-import fetch from 'node-fetch';
-
-let MessageType = (await import(global.baileys)).default;
-
 let handler = async (m, { conn }) => {
   try {
-    // Añadir al mencionado si hay una respuesta a otro mensaje
+    // Si hay respuesta a otro mensaje, añadir al mencionado
     if (m.quoted?.sender) m.mentionedJid.push(m.quoted.sender);
-
+    
     // Obtener la imagen de la API
     let res = await fetch('https://nekos.life/api/v2/img/feed');
     let json = await res.json();
@@ -29,6 +25,10 @@ let handler = async (m, { conn }) => {
     conn.reply(m.chat, 'Ocurrió un error al procesar tu solicitud.', m);
   }
 };
+
+handler.command = /^(alimentar|food|alimentándose|alimentando|alimentar)$/i;
+
+export default handler;
 
 handler.command = /^(alimentar|food|alimentándose|alimentando|alimentar)$/i;
 
