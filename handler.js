@@ -1080,15 +1080,15 @@ const isOwner = isROwner || m.fromMe
 const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 //const isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 //const isPrems = isROwner || global.db.data.users[m.sender].premiumTime > 0
-//if (opts['queque'] && m.text && !(isMods || isPrems)) {
-//let queque = this.msgqueque, time = 1000 * 5
-//const previousID = queque[queque.length - 1]
-//queque.push(m.id || m.key.id)
-//setInterval(async function () {
-//if (queque.indexOf(previousID) === -1) clearInterval(this)
-//await delay(time)
-//}, time)
-//}
+if (opts['queque'] && m.text && !(isMods || isPrems)) {
+let queque = this.msgqueque, time = 1000 * 5
+const previousID = queque[queque.length - 1]
+queque.push(m.id || m.key.id)
+setInterval(async function () {
+if (queque.indexOf(previousID) === -1) clearInterval(this)
+await delay(time)
+}, time)
+}
 
 if (opts['nyimak']) return
 if (!isROwner && opts['self']) return 
@@ -1167,7 +1167,7 @@ isOwner,
 isRAdmin,
 isAdmin,
 isBotAdmin,
-//isPrems,
+isPrems,
 chatUpdate,
 __dirname: ___dirname,
 __filename
@@ -1237,10 +1237,10 @@ if (plugin.mods && !isMods) { // Moderator
 fail('mods', m, this)
 continue
 }
-//if (plugin.premium && !isPrems) { // Premium
-//fail('premium', m, this)
-//continue
-//}
+if (plugin.premium && !isPrems) { // Premium
+fail('premium', m, this)
+continue
+}
 if (plugin.group && !m.isGroup) { //Solo el grupo
 fail('group', m, this)
 continue
@@ -1300,18 +1300,18 @@ isOwner,
 isRAdmin,
 isAdmin,
 isBotAdmin,
-//isPrems,
+isPrems,
 chatUpdate,
 __dirname: ___dirname,
 __filename
 }
 try {
 await plugin.call(this, m, extra)
-//if (!isPrems)
-//m.limit = m.limit || plugin.limit || false
-//m.money = m.money || plugin.money || false
-//} catch (e) {
-// Error occured
+if (!isPrems)
+m.limit = m.limit || plugin.limit || false
+m.money = m.money || plugin.money || false
+} catch (e) {
+ Error occured
 m.error = e
 console.error(e)
 if (e) {
