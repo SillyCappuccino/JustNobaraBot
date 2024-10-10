@@ -27,6 +27,6 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd 
-> cd The-MikuBot-MDV5
+> cd "Repositorio"
 > rm -rf MikuBotSession
 > npm start
