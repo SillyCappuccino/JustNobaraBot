@@ -513,8 +513,8 @@ if (!isNumber(user.wood)) user.wood = 0
 if (!isNumber(user.wortel)) user.wortel = 0
 if (!user.lbars) user.lbars = '[▒▒▒▒▒▒▒▒▒]'
 if (!user.job) user.job = 'Desempleo'
-//if (!user.premium) user.premium = true
-//if (!user.premium) user.premiumTime = 99999999999999999999999
+if (!user.premium) user.premium = true
+if (!user.premium) user.premiumTime = 99999999999999999999999
 if (!user.rtrofi) user.rtrofi = 'Bronce'
 } else
 global.db.data.users[m.sender] = {
