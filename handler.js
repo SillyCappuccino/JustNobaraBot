@@ -1300,8 +1300,6 @@ isOwner,
 isRAdmin,
 isAdmin,
 isBotAdmin,
-isPrem,
-//isPrems,
 chatUpdate,
 __dirname: ___dirname,
 __filename
