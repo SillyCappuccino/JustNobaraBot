@@ -60,7 +60,7 @@ if (typeof user !== 'object')
 global.db.data.users[m.sender] = {}
 if (user) {
 if (!isNumber(user.exp)) user.exp = 0
-if (!('premium' in user)) user.premium = true
+if (!('premium' in user)) user.premium = false
 if (!('muto' in user)) user.muto = false
 if (!isNumber(user.joincount)) user.joincount = 1
 if (!isNumber(user.money)) user.money = 150
@@ -513,8 +513,8 @@ if (!isNumber(user.wood)) user.wood = 0
 if (!isNumber(user.wortel)) user.wortel = 0
 if (!user.lbars) user.lbars = '[▒▒▒▒▒▒▒▒▒]'
 if (!user.job) user.job = 'Desempleo'
-if (!user.premium) user.premium = true
-if (!user.premium) user.premiumTime = 99999999999999999999999
+if (!user.premium) user.premium = false
+if (!user.premium) user.premiumTime = 0
 if (!user.rtrofi) user.rtrofi = 'Bronce'
 } else
 global.db.data.users[m.sender] = {
@@ -847,7 +847,7 @@ pisang: 0,
 pointxp: 0,
 potion: 10,
 muto: false,
-premium: true,
+premium: false,
 premiumTime: 0,
 ramuan: 0,
 ramuancentaurlast: 0,
@@ -1078,7 +1078,7 @@ console.error(e)
 const isROwner = [conn.decodeJid(global.conn.user.id), ...global.owner.map(([number]) => number)].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 const isOwner = isROwner || m.fromMe
 const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
-const isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
+//const isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 const isPrems = isROwner || global.db.data.users[m.sender].premiumTime > 0
 if (opts['queque'] && m.text && !(isMods || isPrems)) {
 let queque = this.msgqueque, time = 1000 * 5
@@ -1300,6 +1300,7 @@ isOwner,
 isRAdmin,
 isAdmin,
 isBotAdmin,
+isPrems,
 chatUpdate,
 __dirname: ___dirname,
 __filename
@@ -1310,7 +1311,7 @@ if (!isPrems)
 m.limit = m.limit || plugin.limit || false
 m.money = m.money || plugin.money || false
 } catch (e) {
- Error occured
+// Error occured
 m.error = e
 console.error(e)
 if (e) {
